@@ -51,8 +51,8 @@ function getToken(){
   // https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
   var config = lib.getConfig();
   var wxRet = http.get("https://api.weixin.qq.com/cgi-bin/token", {
-    appid: config.appid, //"wxf3a4d838441c7e0e", //APPID
-    secret: config.appsecret, //"0f44a68f9d2ee232d9c37e844fd2b7c3", //SECRET
+    appid: config.appid, 
+    secret: config.appsecret, 
     grant_type: "client_credential"
   },"json");
   
