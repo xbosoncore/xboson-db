@@ -30,8 +30,8 @@ var data = {
 var ms = Date.now();
 // 调微信认证API 参数【appid+appsecret+code】，返回【session_key+openid】
 var wxRet = http.get("https://api.weixin.qq.com/sns/jscode2session", {
-  appid: config.appid, //"wxf3a4d838441c7e0e", //APPID
-  secret: config.appsecret, //"0f44a68f9d2ee232d9c37e844fd2b7c3", //SECRET
+  appid: config.appid, 
+  secret: config.appsecret, 
   js_code: data.code,
   grant_type: "authorization_code"
 },"json");
